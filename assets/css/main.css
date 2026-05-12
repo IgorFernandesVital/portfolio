@@ -1,15 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url(./components/header.css);
+@import url(./components/hero.css);
+
+:root{
+    /* Colors */
+    --background-color: rgb(0, 0, 0);
+    --primary-color: rgb(30, 31, 32);
+    --secondary-color: rgb(42, 42, 42);
+    --highligh-color: rgb(53, 169, 40);
+}
 /* Basic configuration */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;       
-    text-decoration: none;   
-    background-color: var(--background-color);  
+    text-decoration: none;    
+    overflow-x: hidden;
 }
-:root{
-    /* Colors */
-    --background-color: rgb(10, 10, 10);
-    --primary-color: rgb(18, 18, 18);
-    --secondary-color: rgb(42, 42, 42);
-    --highligh-color: rgb(53, 169, 40);
+
+body {
+    background-color: var(--background-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.main-container{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+}
+
+html {
+    /* 62.5% de 16px = 10px */
+    font-size: 62.5%; 
 }
