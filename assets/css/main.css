@@ -8,6 +8,7 @@
     --primary-color: rgb(30, 31, 32);
     --secondary-color: rgb(42, 42, 42);
     --highligh-color: rgb(53, 169, 40);
+    --neon-configuration: 0 0 10px var(--highligh-color);
 }
 /* Basic configuration */
 * {

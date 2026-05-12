@@ -13,27 +13,33 @@
     background-position: bottom center, center, center;
     width: 100%;
     height: 100vh;
+   
+}
+.container-3d, .container-hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-
-.container-3d{
-    width: 45rem;
-    height: 45rem; 
+.container-hero{
+    margin-top: 10rem;
+}
+.lowPoly-3d{
+    position: relative;
+    width: 35rem;
+    height: 35rem; 
     z-index: 3;
 }
 .circle{
     position: absolute;
     z-index: 2;
-    margin-top: -5rem;
-    width: 32rem;
-    height: 32rem;
+    width: 24rem;
+    height: 24rem;
     background-color: var(--highligh-color);
     border-radius: 50%;
     box-shadow: 0 0 50px var(--highligh-color);
+    filter: blur(7px);
 }
 .apresentation{
     font-size: 4rem;
@@ -43,7 +49,7 @@
     padding: 0.5rem;
     color: var(--highligh-color);
     text-shadow:
-    0 0 10px var(--highligh-color);
+    var(--neon-configuration);
 }
 .my{
     margin-top: -1.6rem;
@@ -53,4 +59,24 @@
     font-size: 1.7rem;
     font-weight: 100;
     opacity: 0.9;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid var(--highligh-color);
+  border-right: 3px solid var(--highligh-color);
+  transform: rotate(45deg); /* Gira para virar uma seta */
+  animation: arrow-bounce 2s infinite;
+  filter: drop-shadow(var(--neon-configuration));
+}
+
+@keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0) rotate(45deg); }
+  40% { transform: translateX(-50%) translateY(-15px) rotate(45deg); }
+  60% { transform: translateX(-50%) translateY(-7px) rotate(45deg); }
 }

@@ -22,7 +22,7 @@ const montarModelo = (container) => {
 };
 
 const verificarDiv = setInterval(() => {
-    const container = document.getElementById('container-3d');
+    const container = document.getElementById('lowPoly-3d');
     if (container) {
         montarModelo(container);
         clearInterval(verificarDiv); // Para de procurar quando achar
