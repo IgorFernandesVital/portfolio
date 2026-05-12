@@ -3,7 +3,7 @@ import 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.mi
 const montarModelo = (container) => {
     const mv = document.createElement('model-viewer');
     
-    mv.src = '../assets/img/myHead.gltf';
+    mv.src = './assets/img/myHead.gltf';
     mv.cameraControls = true;
     mv.autoRotate = true;
     mv.disableZoom = true;
